@@ -9,7 +9,11 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1) set up main HTML
     - h1 heading
     - ul? could be a div with the image instead
-2) render fruit function
+2) TDD render fruit function
+3) app.js to renderFruits
+4) /fruits folder with html and fruits.js
+5) set up fruits index.html
+6) fruits. js
 
 
 Additional considerations:

@@ -8,9 +8,7 @@ export function renderFruit(fruit) {
     img.classList.add('fruit-img');
 
     const h2 = document.createElement('h2');
-    const type = `${fruit.type}`;
-    const typeUpper = type.toUpperCase();
-    h2.textContent = `${typeUpper}`;
+    h2.textContent = `${fruit.type.toUpperCase()}`;
     h2.setAttribute('id', `${fruit.type}`);
     h2.classList.add('fruit-type');
 
