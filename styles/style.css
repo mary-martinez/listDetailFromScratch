@@ -3,10 +3,10 @@ body {
     /* feel free to update these css variables for a quick theme */
     
     --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color2: rgba(255, 255, 255, 0.8);
+    --color3: rgb(69, 173, 191);
+    --color4: rgb(23, 38, 106);
+    --color5: rgba(0, 0, 0, 0.5);
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -27,8 +27,12 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('../assets/background-2.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -94,8 +98,46 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
 }
 
-h1 {
+.fruit-stand {
     text-decoration: underline;
+    text-shadow: 2px 2px 2px var(--color5);
+    color: var(--color1);
+}
+
+#fruit-shelves {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fruit {
+    border: gray 2px solid;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px var(--color5);
+    padding: 15px;
+    width: 200px;
+    background-color: var(--color1);
+}
+
+.fruit:hover{
+    box-shadow: -2px -2px 5px var(--color5);
+}
+
+.fruit-details {
+    background-color: var(--color2);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px var(--color3) solid;
+}
+
+li {
+    font-size: 1.4rem;
+}
+
+.fruit-page-img {
+    height: 150px;
+    object-fit: cover;
 }

@@ -18,6 +18,7 @@ export function renderFruit(fruit) {
 
 export function renderFruitDetails(fruit) {
     const div = document.createElement('div');
+    div.classList.add('fruit-details');
 
     const h1 = document.createElement('h1');
     h1.classList.add('fruit-name');
